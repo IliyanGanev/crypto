@@ -2,7 +2,7 @@
   	padding: 1rem 2rem 2rem;
   	margin: 1rem;
   	border-radius: 0.5rem;
-  	min-width: 9rem;
+  	min-width: 3rem;
   	border: solid 1px rgba(0, 0, 0, 0.05);
   }
   .cryptocurrency p {
@@ -11,15 +11,14 @@
   .cryptocurrency-name {
   	font-size: 1.25rem;
   }
-  .bitcoin {
-  	background-color: #fbe2c3;
-  	border-bottom: solid 4px #f7931a;
+
+  .bitcoin, .ethereum, .ripple, .bitcoin-cash, .litecoin, .cardano, .neo, .stellar, .eos, .dash, .iota, .monero, .nem, .ethereum-classic, .vechain, .tron, .lisk, .tether, .bitcoin-gold, .omisego, .nano, .icon, .zcash, .binance-coin, .steem, .verge, .bytecoin-bcn, .populous, .stratis, .dogecoin {
+    background-color:white;
+    display: inline-block;
+    opacity: 1;
+    border-radius: 0.2em;
+    padding: 0.7em;
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px black;
   }
-  .ethereum {
-  	background-color: #c2c9ff;
-  	border-bottom: solid 4px #454a75;
-  }
-  .litecoin {
-  	background-color: #ececec;
-  	border-bottom: solid 4px #bebebe;
-  }
+  
