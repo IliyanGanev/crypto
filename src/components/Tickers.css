@@ -18,10 +18,23 @@ div {
 }
 
 .tickers {
-        display: inline-block;
+/*    display: inline-block;
     margin-left: 1em;
     margin-right: 1em;
+    padding: 1em;*/
 	list-style-type: none;
-	padding: 1em;
+    background-color: black;
+    border-radius: 0.6em;
+    box-shadow: 5px 5px 20px black;
 
+}
+
+a {
+    text-decoration: none;
+    color:grey;
+}
+@media screen and (max-width: 800px) {
+    .tickers{
+        display: block;
+    }
 }

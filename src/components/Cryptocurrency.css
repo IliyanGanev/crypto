@@ -1,4 +1,4 @@
-  .cryptocurrency {
+ /* .cryptocurrency {
   	padding: 1rem 2rem 2rem;
   	margin: 1rem;
   	border-radius: 0.5rem;
@@ -7,9 +7,6 @@
   }
   .cryptocurrency p {
   	color: rgba(0, 0, 0, 0.75);
-  }
-  .cryptocurrency-name {
-  	font-size: 1.25rem;
   }
 
   .bitcoin, .ethereum, .ripple, .bitcoin-cash, .litecoin, .cardano, .neo, .stellar, .eos, .dash, .iota, .monero, .nem, .ethereum-classic, .vechain, .tron, .lisk, .tether, .bitcoin-gold, .omisego, .nano, .icon, .zcash, .binance-coin, .steem, .verge, .bytecoin-bcn, .populous, .stratis, .dogecoin {
@@ -20,5 +17,103 @@
     padding: 0.7em;
     border: 1px solid black;
     box-shadow: 10px 10px 5px black;
+  }*/
+  .cryptocurrency-name {
+  	/*font-size: 1.25rem;*/
+    color:#00caf5;
   }
+  p, h1{
+    display: inline;
+    /*padding-left: 2em;*/
+    color:#1fcaa7;
+  }
+
+li{
+  text-align: left;
+  padding: 0.5em;
+  border-bottom: 0.5px solid #00caf5;
   
+  margin: auto;
+}
+
+.spark {
+  vertical-align: middle;
+  display:inline-block;
+  margin-left: 2em;
+  height:2em;
+  width: 10em; 
+ /* background-color:red;*/
+ text-align: center;
+ /* border: 1px solid #00caf5;*/
+}
+
+svg {
+  height: 35px;
+}
+
+.average{
+  font-size:9px;
+}
+
+.rotated{
+  display:inline-block;
+  transform: rotateZ(-45deg);
+
+}
+.total_supply, .circulating_supply{
+  display: block;
+  font-size:12px;
+  text-align: right;
+
+}
+
+.supply_div{
+  display:inline-block;
+  width: 200px;
+}
+
+.namediv {
+  display: inline-block;
+  text-align: left;
+  width: 150px;
+ }
+
+.pricediv {
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+}
+
+.percentage_change {
+  /*padding-left: 2em;*/
+}
+
+.percentage1hrdiv{
+  display: inline-block;
+  text-align: center;
+  width: 120px;
+}
+
+.percentage24hrdiv{
+  display: inline-block;
+  text-align: center;
+  width: 120px;
+}
+.percentage7div{
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+}
+
+
+@media screen and (max-width: 800px) {
+  p, h1 {
+    display:block;
+    padding-left: 0em;
+  }
+  .spark {
+   vertical-align: left;
+     padding-left: 0em;
+     margin-left: 0em;
+  }
+}

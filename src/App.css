@@ -4,11 +4,24 @@
 
 .App-header {
   background-color: #222;
-  color: white;
-  font-size: 1.25rem;
-  margin: 0;
-  padding: 1rem;
+  padding: 1px;
+  text-align: left;
 }
+
+.Logo-container {
+	display: inline-block;
+	padding-left: 5em;
+	padding-top: 1em;
+	width: 120px;
+}
+
+.Logo-container img {
+   width: 100%;
+   height: auto;
+   top: auto;
+
+}
+
 
 
 

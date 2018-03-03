@@ -43,15 +43,16 @@ class Tickers extends Component {
 
   componentDidMount() {
     this.fetchCryptocurrencyData()
-    this.interval = setInterval(() => this.fetchCryptocurrencyData(), 10 * 2000);
+    this.interval = setInterval(() => this.fetchCryptocurrencyData(), 6000);
   }
 
   fetchCryptocurrencyData() {
     axios.get("https://api.coinmarketcap.com/v1/ticker/")
     .then(response => {
       console.log(response)
-      var wanted = ["bitcoin", "ethereum", "ripple", "bitcoin-cash", "litecoin", "cardano", "neo", "stellar", "eos", "dash", "iota", "monero", "nem", "ethereum-classic", "vechain", "tron", "lisk", "tether", "bitcoin-gold", "omisego", "nano", "icon", "zcash", "binance-coin", "steem", "verge", "bytecoin-bcn", "populous", "stratis", "dogecoin"];
-      var result = response.data.filter(currency => wanted.includes(currency.id));
+      // var wanted = ["bitcoin", "ethereum", "ripple", "bitcoin-cash", "litecoin", "cardano", "neo", "stellar", "eos", "dash", "iota", "monero", "nem", "ethereum-classic", "vechain", "tron", "lisk", "tether", "bitcoin-gold", "omisego", "nano", "icon", "zcash", "binance-coin", "steem", "verge", "bytecoin-bcn", "populous", "stratis", "dogecoin","rchain"];
+      // var result = response.data.filter(currency => wanted.includes(currency.id));
+      var result = response.data
       this.setState({ data: result});
     })
     .catch(err => console.log(err));
@@ -65,7 +66,7 @@ class Tickers extends Component {
     return(
      <div className="tickers-container">
      <ul className="tickers">{tickers}</ul>
-     <p>Info updated every 20 seconds.</p>
+     <p>Powered by <a href="https://coinmarketcap.com">coinmarketcap.com</a> & <a href="http://iliyanganev.com">iliyanganev.com</a></p>
      </div>
      );
   }
