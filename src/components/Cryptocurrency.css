@@ -91,7 +91,8 @@ svg {
 .percentage1hrdiv{
   display: inline-block;
   text-align: center;
-  width: 200px;
+  width: 150px;
+  padding-left: 2em;
 }
 
 .percentage24hrdiv{
@@ -120,6 +121,6 @@ svg {
   .pricediv, .percentage1hrdiv, .percentage24hrdiv, .percentage7div, .total_supply, .circulating_supply{
     display: block;
     text-align: left;
-   
+   padding-left: 0em;
   }
 }
