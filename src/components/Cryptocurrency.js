@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Cryptocurrency.css';
 import { Sparklines, SparklinesLine, SparklinesSpots, SparklinesReferenceLine } from 'react-sparklines';
-import _ from 'lodash';
+
 
 class Cryptocurrency extends Component {
 
@@ -10,7 +10,6 @@ class Cryptocurrency extends Component {
 		} = this.props.data;
 
 		function average(a,b,c) {
-			// return (_.sum(data)/3).toFixed(4);
 			return ((Number(a)+Number(b)+Number(c))/3).toFixed(2);
 		}
 
